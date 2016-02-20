@@ -81,7 +81,7 @@ public class ServerSocket {
             message = "NO";
         }
         
-        String replyMessage="echo "+ message;
+        String replyMessage= message;
         System.out.println("Mensaje  enviar:" + replyMessage);
         return replyMessage;
     }

@@ -43,7 +43,10 @@
 
             }
             function processMessage(message) {
-                messagesTextArea.value += "Recibido del servidor..." + message.data +"\n";
+                messagesTextArea.value += "Recibido del servidor..." + message.data +"\n";                
+                if(message.data === "NO"){
+                    alert("El número telefónico no existe");
+                }
 
             }
             function sendMessage() {
